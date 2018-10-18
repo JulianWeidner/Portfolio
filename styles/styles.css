@@ -1,0 +1,55 @@
+.title-section {
+  height: 100vh;
+  width: 100vw;
+  display: inline-block;
+  padding-left: 10%; }
+  .title-section h1 {
+    font-size: 4rem;
+    padding-left: 10%; }
+  .title-section p {
+    padding-left: 10%;
+    font-size: 2.5rem;
+    opacity: 5; }
+
+nav {
+  height: 100vh;
+  display: inline; }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20% 0 0 0;
+    width: 10%;
+    height: 100%;
+    background-color: black;
+    position: fixed; }
+    nav ul li {
+      width: 100%; }
+      nav ul li a {
+        padding: 10% 0 0 0;
+        margin: 0;
+        width: 100%;
+        display: block;
+        color: white;
+        text-decoration: none;
+        text-align: left;
+        font-size: 1rem; }
+        nav ul li a:hover {
+          color: black;
+          background-color: white; }
+
+.skills-container {
+  padding-left: 10%; }
+
+.projects-container {
+  padding-left: 10%; }
+
+.work-container {
+  padding-left: 10%; }
+
+.education-container {
+  padding-left: 10%; }
+
+.personal-container {
+  padding-left: 10%; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,89 @@
+$full-height: 100vh;
+$full-width: 100vw;
+$stack-on-nav: 10%;
+
+
+.test-class{
+  
+}
+
+
+
+
+.title-section{
+  height: $full-height;
+  width: $full-width;
+  display: inline-block;
+  padding-left: $stack-on-nav;
+  h1 {
+    font-size: 4rem;
+    padding-left: 10%;
+   
+  }
+  p {
+    padding-left: 10%;
+    font-size: 2.5rem;
+    opacity: 5;
+  }
+}
+
+
+.nav-container{
+ 
+}
+
+
+nav {
+   height: $full-height;  
+   display: inline;
+   
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20% 0 0 0;
+    width: 10%;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    li{
+      
+      width: 100%;
+     
+       a {
+        padding: 10% 0 0 0;
+        margin: 0;
+        width: 100%;
+        display: block;
+        color: white;
+        text-decoration: none;
+        text-align: left;
+        font-size: 1rem;
+        &:hover{
+          color: black;
+          background-color: white;
+          
+        }
+      }
+    }
+  }
+}
+
+.skills-container{
+  padding-left: $stack-on-nav;
+}
+
+.projects-container{
+  padding-left: $stack-on-nav;
+}
+
+.work-container{
+  padding-left: $stack-on-nav;
+}
+
+.education-container{
+  padding-left: $stack-on-nav;
+}
+
+.personal-container{
+  padding-left: $stack-on-nav;
+}
