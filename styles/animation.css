@@ -1,0 +1,24 @@
+.title-header{
+  display: inline;
+  font-size: 30px;
+}
+
+.blinker{
+  background-color: white;
+  color: black;
+  animation-name: blinker-animation;
+  animation-duration: .7s;
+  animation-iteration-count:infinite;
+  
+}
+
+@keyframes blinker-animation{
+  from {
+    background-color: white;
+    color: black;
+  }
+  to {
+    background-color: black;
+    color:white;    
+  }
+}
