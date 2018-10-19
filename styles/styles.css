@@ -89,4 +89,11 @@ nav {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.badge-icon {
+  height: 50px;
+  width: 50px;
+  padding: 7%;
+  margin: 4%;
+  background-color: white; }
+
 /*# sourceMappingURL=styles.css.map */

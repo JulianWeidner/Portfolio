@@ -7,6 +7,14 @@ $bg-img-two: '/Users/julian/websites/Portfolio/media-icons/background-parallax-t
 $bg-img-three: '/Users/julian/websites/Portfolio/media-icons/background-parallax-three.png';
 
 
+@mixin skill-badge{
+  height: 50px;
+  width: 50px;
+  padding: 7%;
+  margin: 4%;
+  background-color: white;
+}
+
 @mixin parallax($bg-img) {
   height: 75vh;
   background-image: url($bg-img);
@@ -119,4 +127,10 @@ nav {
 
 .bg-three {
   @include parallax($bg-img-three);
+}
+
+//badges
+
+.badge-icon{
+  @include skill-badge;
 }
