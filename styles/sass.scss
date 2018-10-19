@@ -1,14 +1,28 @@
 $full-height: 100vh;
 $full-width: 100vw;
 $stack-on-nav: 10%;
+$fade: .6s;
+$bg-img-one: '/Users/julian/websites/Portfolio/media-icons/background-parallax.png';
+$bg-img-two: '/Users/julian/websites/Portfolio/media-icons/background-parallax-two.png';
+$bg-img-three: '/Users/julian/websites/Portfolio/media-icons/background-parallax-three.png';
 
 
-.test-class{
-  
+@mixin parallax($bg-img) {
+  height: 75vh;
+  background-image: url($bg-img);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-
-
+@mixin nav-fade($fade) {
+  -o-transition: $fade;
+  -ms-transition: $fade;
+  -moz-transition: $fade;
+  -webkit-transition: $fade;
+  transition: $fade;
+}
 
 .title-section{
   height: $full-height;
@@ -18,20 +32,13 @@ $stack-on-nav: 10%;
   h1 {
     font-size: 4rem;
     padding-left: 10%;
-   
   }
   p {
     padding-left: 10%;
     font-size: 2.5rem;
-    opacity: 5;
+    opacity: .5;
   }
 }
-
-
-.nav-container{
- 
-}
-
 
 nav {
    height: $full-height;  
@@ -46,7 +53,6 @@ nav {
     background-color: black;
     position: fixed;
     li{
-      
       width: 100%;
      
        a {
@@ -61,6 +67,7 @@ nav {
         &:hover{
           color: black;
           background-color: white;
+          @include nav-fade($fade);
           
         }
       }
@@ -70,6 +77,17 @@ nav {
 
 .skills-container{
   padding-left: $stack-on-nav;
+
+  h3{
+    padding-left: 10%;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .projects-container{
@@ -86,4 +104,19 @@ nav {
 
 .personal-container{
   padding-left: $stack-on-nav;
+}
+
+
+//backgounds
+
+.bg-one{
+  @include parallax($bg-img-one);
+}
+
+.bg-two{
+  @include parallax($bg-img-two);
+}
+
+.bg-three {
+  @include parallax($bg-img-three);
 }

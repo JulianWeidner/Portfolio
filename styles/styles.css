@@ -9,7 +9,7 @@
   .title-section p {
     padding-left: 10%;
     font-size: 2.5rem;
-    opacity: 5; }
+    opacity: .5; }
 
 nav {
   height: 100vh;
@@ -35,10 +35,23 @@ nav {
         font-size: 1rem; }
         nav ul li a:hover {
           color: black;
-          background-color: white; }
+          background-color: white;
+          -o-transition: 0.6s;
+          -ms-transition: 0.6s;
+          -moz-transition: 0.6s;
+          -webkit-transition: 0.6s;
+          transition: 0.6s; }
 
 .skills-container {
   padding-left: 10%; }
+  .skills-container h3 {
+    padding-left: 10%;
+    text-align: center;
+    font-size: 2rem; }
+  .skills-container .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
 
 .projects-container {
   padding-left: 10%; }
@@ -51,5 +64,29 @@ nav {
 
 .personal-container {
   padding-left: 10%; }
+
+.bg-one {
+  height: 75vh;
+  background-image: url("/Users/julian/websites/Portfolio/media-icons/background-parallax.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.bg-two {
+  height: 75vh;
+  background-image: url("/Users/julian/websites/Portfolio/media-icons/background-parallax-two.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.bg-three {
+  height: 75vh;
+  background-image: url("/Users/julian/websites/Portfolio/media-icons/background-parallax-three.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 /*# sourceMappingURL=styles.css.map */
