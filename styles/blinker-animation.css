@@ -1,13 +1,9 @@
-.title-header{
-  display: inline;
-  font-size: 30px;
-}
 
 .blinker{
   background-color: white;
   color: black;
   animation-name: blinker-animation;
-  animation-duration: .7s;
+  animation-duration: 1.1s;
   animation-iteration-count:infinite;
   
 }
