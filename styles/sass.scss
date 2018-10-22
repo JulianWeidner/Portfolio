@@ -85,17 +85,20 @@ nav {
 
 .skills-container{
   padding-left: $stack-on-nav;
-
-  h3{
-    text-align: center;
-    font-size: 2rem;
-  }
+  text-align: center;
   .flex-container{
+    padding: 5% 10% 5% 42%;
+    height: 80%;
+    width: 60%;
+    max-width: 375px;
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
-    .flex-badge{
-      height: 60px;
-      width: 60px;
+    justify-content: space-around;
+    .skill-card{
+      width: 100px;  /* Or whatever */
+      height: 100px; /* Or whatever */
+      margin: auto;
     }
   }
 }
