@@ -7,14 +7,6 @@ $bg-img-two: '/Users/julian/websites/Portfolio/media-icons/background-parallax-t
 $bg-img-three: '/Users/julian/websites/Portfolio/media-icons/background-parallax-three.png';
 
 
-@mixin skill-badge{
-  height: 50px;
-  width: 50px;
-  padding: 7%;
-  margin: 4%;
-  background-color: white;
-}
-
 @mixin parallax($bg-img) {
   height: 75vh;
   background-image: url($bg-img);
@@ -64,13 +56,14 @@ nav {
       width: 100%;
      
        a {
-        padding: 10% 0 0 0;
+        padding: 7% 0 7% 3%;
         margin: 0;
         width: 100%;
         display: block;
         color: white;
         text-decoration: none;
         text-align: left;
+        line-height: 1.6;
         font-size: 1rem;
         &:hover{
           color: black;
@@ -86,19 +79,30 @@ nav {
 .skills-container{
   padding-left: $stack-on-nav;
   text-align: center;
+  width: 100%;
+  justify: center;
   .flex-container{
-    padding: 5% 10% 5% 42%;
+    padding-left: 25%;
     height: 80%;
-    width: 60%;
-    max-width: 375px;
-    text-align: center;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+   
     .skill-card{
-      width: 100px;  /* Or whatever */
-      height: 100px; /* Or whatever */
-      margin: auto;
+     background-color: 	#f2f2f2;
+     border: 2px solid #cccccc;
+     padding: 5%;
+     margin: 5%;
+     text-align: center;
+     p{
+       padding: 0;
+       margin: 0;
+       text-algin: center;
+     }
+     img{
+       text-align: center;
+     }
     }
   }
 }
@@ -137,5 +141,37 @@ nav {
 //badges
 
 .badge-icon{
-  @include skill-badge;
+  height: 75px;
+  width: 75px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+//Delete this later. Its just for codepen.
+.blinker{
+  
+  background-color: white;
+  color: black;
+  animation-name: blinker-animation;
+  animation-duration: 1.1s;
+  animation-iteration-count:infinite;
+  
+}
+
+@keyframes blinker-animation{
+  from {
+    background-color: white;
+    color: black;
+  }
+  to {
+    background-color: black;
+    color:white;    
+  }
 }
