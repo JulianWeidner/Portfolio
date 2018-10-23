@@ -2,6 +2,8 @@ $full-height: 100vh;
 $full-width: 100vw;
 $stack-on-nav: 10%;
 $fade: .6s;
+$title-font: 'Roboto', sans-serif;
+$content-font: 'Raleway', sans-serif;
 $bg-img-one: '/Users/julian/websites/Portfolio/media-icons/background-parallax.png';
 $bg-img-two: '/Users/julian/websites/Portfolio/media-icons/background-parallax-two.png';
 $bg-img-three: '/Users/julian/websites/Portfolio/media-icons/background-parallax-three.png';
@@ -24,19 +26,38 @@ $bg-img-three: '/Users/julian/websites/Portfolio/media-icons/background-parallax
   transition: $fade;
 }
 
+html{
+  font-size: 1vw;
+}
+h1{
+  font-family: $title-font;
+}
+
+h3{
+  font-family:$title-font;
+  font-size: 2rem;
+  p{
+    font-family: $content-font; 
+    font-size: 1.7rem;
+  }
+}
+
+
 .title-section{
   height: $full-height;
   width: $full-width;
   display: inline-block;
   padding-left: $stack-on-nav;
   h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     padding-left: 10%;
+    font-family: $title-font;
   }
   p {
     padding-left: 10%;
-    font-size: 2.5rem;
+    font-size: 5rem;
     opacity: .5;
+    font-family: $content-font;
   }
 }
 
@@ -64,7 +85,8 @@ nav {
         text-decoration: none;
         text-align: left;
         line-height: 1.6;
-        font-size: 1rem;
+        font-size: 1.7rem;
+        font-family: $content-font;
         &:hover{
           color: black;
           background-color: white;
@@ -77,18 +99,19 @@ nav {
 }
 
 .skills-container{
-  padding-left: $stack-on-nav;
-  text-align: center;
+  padding-left: $stack-on-nav ;
   width: 100%;
-  justify: center;
+  h3{
+    padding-left: 40%;
+  }
   .flex-container{
-    padding-left: 25%;
+    margin: 0;
+    padding-left: 20%;
     height: 80%;
     width: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-   
     .skill-card{
      background-color: 	#f2f2f2;
      border: 2px solid #cccccc;
@@ -98,7 +121,7 @@ nav {
      p{
        padding: 0;
        margin: 0;
-       text-algin: center;
+       text-align: center;
      }
      img{
        text-align: center;
@@ -119,7 +142,7 @@ nav {
   padding-left: $stack-on-nav;
 }
 
-.personal-container{
+.goals-container{
   padding-left: $stack-on-nav;
 }
 
@@ -138,40 +161,9 @@ nav {
   @include parallax($bg-img-three);
 }
 
-//badges
-
 .badge-icon{
   height: 75px;
   width: 75px;
   text-align: center;
 }
 
-
-
-
-
-
-
-
-
-//Delete this later. Its just for codepen.
-.blinker{
-  
-  background-color: white;
-  color: black;
-  animation-name: blinker-animation;
-  animation-duration: 1.1s;
-  animation-iteration-count:infinite;
-  
-}
-
-@keyframes blinker-animation{
-  from {
-    background-color: white;
-    color: black;
-  }
-  to {
-    background-color: black;
-    color:white;    
-  }
-}
