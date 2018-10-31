@@ -67,6 +67,7 @@ nav {
   .skills-container .flex-container {
     margin: 0;
     padding-left: 20%;
+    padding-bottom: 5%;
     height: 80%;
     width: 50%;
     display: flex;
@@ -86,7 +87,47 @@ nav {
         text-align: center; }
 
 .projects-container {
-  padding-left: 10%; }
+  padding-left: 10%;
+  text-align: center; }
+  .projects-container .project-capsule {
+    text-align: center;
+    text-decoration: none; }
+    .projects-container .project-capsule a {
+      text-decoration: none;
+      color: black; }
+    .projects-container .project-capsule #Etch {
+      margin: 2% 25%;
+      padding: 3% 1%;
+      width: 50%;
+      border-radius: 1.4%;
+      font-size: 2rem;
+      font-family: 'Lobster', cursive;
+      text-shadow: -3px 1px 6px black;
+      background-color: #e63946;
+      color: #A8dadc; }
+    .projects-container .project-capsule #Rock {
+      margin: 2% 25%;
+      padding: 3% 1%;
+      width: 50%;
+      border-radius: 1.4%;
+      font-size: 2rem;
+      color: #db504a;
+      background-color: #24282a; }
+    .projects-container .project-capsule #Google {
+      margin: 2% 25%;
+      padding: 3% 1%;
+      width: 50%;
+      border-radius: 1.4%;
+      font-size: 2rem;
+      background-color: #ededed; }
+      .projects-container .project-capsule #Google .g-blue {
+        color: #4285F4; }
+      .projects-container .project-capsule #Google .g-red {
+        color: #DB4437; }
+      .projects-container .project-capsule #Google .g-yellow {
+        color: #F4B400; }
+      .projects-container .project-capsule #Google .g-green {
+        color: #0F9D58; }
 
 .work-container {
   padding-left: 10%; }
@@ -125,5 +166,13 @@ nav {
   height: 75px;
   width: 75px;
   text-align: center; }
+
+#github-icon {
+  height: 30%;
+  width: 30%;
+  margin-left: 25%; }
+  #github-icon:hover {
+    background-color: black;
+    border-radius: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
