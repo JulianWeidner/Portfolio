@@ -8,7 +8,8 @@ h1 {
 
 h3 {
   font-family: "Roboto", sans-serif;
-  font-size: 2rem; }
+  font-size: 2rem;
+  padding-top: 5%; }
   h3 p {
     font-family: "Raleway", sans-serif;
     font-size: 1.7rem; }
@@ -62,6 +63,7 @@ nav {
           transition: 0.6s; }
 
 .skills-container {
+  padding-bottom: 7%;
   padding-left: 10%;
   width: 100%; }
   .skills-container h3 {
@@ -89,6 +91,7 @@ nav {
         text-align: center; }
 
 .projects-container {
+  padding-bottom: 7%;
   padding-left: 10%;
   text-align: center; }
   .projects-container .project-capsule {
@@ -132,13 +135,41 @@ nav {
         color: #0F9D58; }
 
 .about-container {
-  padding-left: 10%; }
+  padding-bottom: 7%;
+  padding-left: 10%;
+  height: 50vh; }
+  .about-container h3 {
+    text-align: center; }
+  .about-container p {
+    text-align: justify;
+    padding: 0 20% 0 20%;
+    font-size: 1.5rem;
+    font-family: "Raleway", sans-serif; }
 
 .goals-container {
+  padding-bottom: 7%;
   padding-left: 10%; }
+  .goals-container h3 {
+    text-align: center; }
+  .goals-container p {
+    text-align: justify;
+    padding: 0 20% 0 20%;
+    font-size: 1.5rem;
+    font-family: "Raleway", sans-serif; }
+  .goals-container li {
+    list-style: none;
+    padding: .5% 20% .2% 35%;
+    font-size: 1.5rem;
+    font-family: "Raleway", sans-serif; }
+
+.contact-container {
+  padding-bottom: 7%;
+  padding-left: 10%; }
+  .contact-container h3 {
+    text-align: center; }
 
 .bg-one {
-  height: 75vh;
+  height: 55vh;
   background-image: url("/Users/julian/websites/Portfolio/media-icons/background-parallax.png");
   background-attachment: fixed;
   background-position: center;
@@ -146,7 +177,7 @@ nav {
   background-size: cover; }
 
 .bg-two {
-  height: 75vh;
+  height: 55vh;
   background-image: url("/Users/julian/websites/Portfolio/media-icons/background-parallax-two.png");
   background-attachment: fixed;
   background-position: center;
@@ -154,7 +185,7 @@ nav {
   background-size: cover; }
 
 .bg-three {
-  height: 75vh;
+  height: 55vh;
   background-image: url("/Users/julian/websites/Portfolio/media-icons/background-parallax-three.png");
   background-attachment: fixed;
   background-position: center;
