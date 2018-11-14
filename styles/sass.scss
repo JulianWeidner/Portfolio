@@ -4,9 +4,10 @@ $stack-on-nav: 10%;
 $fade: .6s;
 $title-font: 'Roboto', sans-serif;
 $content-font: 'Raleway', sans-serif;
-$bg-img-one: '/Users/julian/websites/Portfolio/media-icons/background-parallax.png';
-$bg-img-two: '/Users/julian/websites/Portfolio/media-icons/background-parallax-two.png';
-$bg-img-three: '/Users/julian/websites/Portfolio/media-icons/background-parallax-three.png';
+
+$bg-img-one: '/var/www/Portfolio/styles/media/background-parallax.png';
+$bg-img-two: 'var/www/Portfolio/styles/media/background-parallax-two.png';
+$bg-img-three: 'var/www/Portfolio/styles/media/background-parallax-three.png';
 
 
 @mixin parallax($bg-img) {

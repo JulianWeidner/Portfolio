@@ -170,7 +170,7 @@ nav {
 
 .bg-one {
   height: 55vh;
-  background-image: url("/Users/julian/websites/Portfolio/media-icons/background-parallax.png");
+  background-image: url("/var/www/Portfolio/styles/media/background-parallax.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -178,7 +178,7 @@ nav {
 
 .bg-two {
   height: 55vh;
-  background-image: url("/Users/julian/websites/Portfolio/media-icons/background-parallax-two.png");
+  background-image: url("var/www/Portfolio/styles/media/background-parallax-two.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -186,7 +186,7 @@ nav {
 
 .bg-three {
   height: 55vh;
-  background-image: url("/Users/julian/websites/Portfolio/media-icons/background-parallax-three.png");
+  background-image: url("var/www/Portfolio/styles/media/background-parallax-three.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
