@@ -14,7 +14,7 @@ h3 {
     font-family: "Raleway", sans-serif;
     font-size: 1.7rem; }
 
-.title-section { 
+.title-section {
   height: 100vh;
   width: 100vw;
   display: inline-block;
@@ -170,7 +170,7 @@ nav {
 
 .bg-one {
   height: 55vh;
-  background-image: url("/var/www/styles/media/background-parallax.png");
+  background-image: url("/var/www/html/styles/media/background-parallax.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -178,7 +178,7 @@ nav {
 
 .bg-two {
   height: 55vh;
-  background-image: url("/var/www/styles/media/background-parallax-two.png");
+  background-image: url("/var/www/html/styles/media/background-parallax-two.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -186,7 +186,7 @@ nav {
 
 .bg-three {
   height: 55vh;
-  background-image: url("/var/www/styles/media/background-parallax-three.png");
+  background-image: url("/var/www/html/styles/media/background-parallax-three.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
