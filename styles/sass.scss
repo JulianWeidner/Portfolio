@@ -5,9 +5,9 @@ $fade: .6s;
 $title-font: 'Roboto', sans-serif;
 $content-font: 'Raleway', sans-serif;
 
-$bg-img-one: '/var/www/Portfolio/styles/media/background-parallax.png';
-$bg-img-two: 'var/www/Portfolio/styles/media/background-parallax-two.png';
-$bg-img-three: 'var/www/Portfolio/styles/media/background-parallax-three.png';
+$bg-img-one: '/var/www/styles/media/background-parallax.png';
+$bg-img-two: '/var/www/styles/media/background-parallax-two.png';
+$bg-img-three: '/var/www/styles/media/background-parallax-three.png';
 
 
 @mixin parallax($bg-img) {
